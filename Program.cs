@@ -1,4 +1,5 @@
-﻿using static System.Console;
+using System.Text;
+using static System.Console;
 
 namespace Assembly
 {
