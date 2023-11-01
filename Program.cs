@@ -66,6 +66,9 @@ namespace Assembly
             IDictionary<string, IGrouping<string, Запись>> словарьБ
                 = группыБ.ToDictionary(группа => группа.Key);
 
+            // Поддержка кириллицы в консили:
+            Console.OutputEncoding = Encoding.UTF8;
+            
             // Теперь мы можем обходить списокА, обращаясь к словарюБ на каждой итерации:
             foreach(Запись запись in списокА)
             {
